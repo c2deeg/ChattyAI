@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/discoveryFragment"
+        android:icon="@drawable/chatting"
+        android:title="Chat" />
+    <item
+        android:id="@+id/likeFragment"
+        android:icon="@drawable/baseline_image_24"
+        android:title="Image" />
+    <item
+        android:id="@+id/premiumPackagesFragment"
+        android:icon="@drawable/transcript"
+        android:title="Transcription" />
+
+
+</menu>

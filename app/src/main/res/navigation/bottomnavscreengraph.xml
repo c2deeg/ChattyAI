@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomnavscreengraph"
+    app:startDestination="@id/welcomeChattyFragment">
+
+    <fragment
+        android:id="@+id/welcomeChattyFragment"
+        android:name="com.app.chattyai.fragments.ChatFragment"
+        android:label="fragment_welcome_chatty"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_welcomeChattyFragment_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.app.chattyai.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_profileinfoFragment"
+            app:destination="@id/profileinfoFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_aboutopenchatAIFragment"
+            app:destination="@id/aboutopenchatAIFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileinfoFragment"
+        android:name="com.app.chattyai.fragments.ProfileinfoFragment"
+        android:label="fragment_profileinfo"
+        tools:layout="@layout/fragment_profileinfo" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.app.chattyai.fragments.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/aboutopenchatAIFragment"
+        android:name="com.app.chattyai.fragments.AboutopenchatAIFragment"
+        android:label="fragment_aboutopenchat_a_i"
+        tools:layout="@layout/fragment_aboutopenchat_a_i" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.app.chattyai.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

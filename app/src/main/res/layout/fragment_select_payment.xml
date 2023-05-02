@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".fragments.SelectPaymentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/userbadge"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/lessroundeddrawable"
+        android:backgroundTint="@android:color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/interregular"
+            android:gravity="center"
+            android:text="Select Payment Method"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Paypal"
+                android:drawableRight="@drawable/payapll"
+                android:padding="10dp"
+                android:background="@drawable/strokesquaredrawable"
+                />
+            <RadioButton
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Add new card"
+                android:drawableRight="@drawable/addnewcard"
+                android:padding="10dp"
+                android:layout_marginBottom="30sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/strokesquaredrawable"
+                />
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

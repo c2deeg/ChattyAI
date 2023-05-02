@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".fragments.ChatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:src="@drawable/applogo"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/intermedium"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="Try premium"
+            android:layout_gravity="center"
+            android:background="@drawable/moreroundcorner"
+            android:backgroundTint="#6b6e7a"
+            android:drawableLeft="@drawable/stars"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:layout_marginTop="-3dp"
+            android:src="@drawable/baseline_ios_share_24"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/userbadge"
+            android:tint="@color/white" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginTop="10dp"
+        android:background="#056042"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="72dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/etmsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:background="@drawable/moreroundcorner"
+                android:padding="10dp"
+                android:backgroundTint="#6D7277"
+                android:hint="Type here..."
+                android:textColorHint="@color/lightgray2"/>
+            <ImageView
+                android:id="@+id/imgsend"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/send"
+                app:tint="@color/appcolor" />
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginnavigationgraph"
+    app:startDestination="@id/signupFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.chattyai.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_otpFragmentFragment"
+            app:destination="@id/otpFragmentFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_selectPaymentFragment"
+            app:destination="@id/selectPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragmentFragment"
+        android:name="com.app.chattyai.fragments.OtpFragmentFragment"
+        android:label="fragment_otp_fragment"
+        tools:layout="@layout/fragment_otp_fragment" >
+        <action
+            android:id="@+id/action_otpFragmentFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.app.chattyai.activities.HomeActivity"/>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.app.chattyai.fragments.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPaymentFragment"
+        android:name="com.app.chattyai.fragments.SelectPaymentFragment"
+        android:label="fragment_select_payment"
+        tools:layout="@layout/fragment_select_payment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.chattyai.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.app.chattyai.fragments.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
